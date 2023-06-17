@@ -119,9 +119,9 @@ function App() {
         else if(item.key === "desktopCategories")  {
          return <DesktopCategories desktopCategories={item.value} />
         }
-        else if(item.key === "desktopOffers"){
-          return <TopOffer desktopOffers={item.value} />
-        }
+        // else if(item.key === "desktopOffers"){
+        //   return <TopOffer desktopOffers={item.value} />
+        // }
       }
 
 
