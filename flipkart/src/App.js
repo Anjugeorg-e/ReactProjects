@@ -89,59 +89,63 @@ function App() {
     array.push(obj);
   });
 
-  // function arrangeItems(){
 
-  //   switch("item"){
-  //     case 'headerNav' :
-
-  //   }
-  // }
-
-
+  function arrangeItems(item){
+    if(item.key === "headerNav") {
+      return  <Categories categories={item.value} /> 
+     }
+     else if(item.key === "flipkartProducts"){
+       return <CarouselMobile mobileProducts={item.value} />
+     }
+     else if(item.key === "newDeals"){
+       return <Deals offer={item.value} />
+     }
+     else if(item.key === "wishlist"){
+       return <Wishlist wishlist={item.value} />
+     }
+     else if(item.key === "desktopCategories")  {
+      return <DesktopCategories desktopCategories={item.value} />
+     }
+     else if(item.key === "desktopOffers"){
+       return <TopOffer desktopOffers={item.value} />
+     }
+     else if(item.key === "sponsored"){
+       return <Sponsor sponsor={item.value} />
+     }
+     else if(item.key === "spotLight"){
+       return <Spotlight spotlight={item.value} />
+     }
+     else if(item.value === "caroselElements"){
+      return <CarouselDesktop desktopCarousel={item.value} />
+     }
+     else if(item.key === "mobiles"){
+      return <Mobiles desktopMobiles={item.value} />
+     }
+     else if(item.key === "phones"){
+       return <Electronics electronics={item.value} />
+     }
+     else if(item.key === "mobiles"){
+       <Mobiles desktopMobiles={item.value} />
+     }
+     else if( item.key === "desktopOffers"){
+      <TopOffer desktopOffers={item.value} />
+     }
+     else if(item.key === "dealsOnFashion"){
+      <DealsFashion dealsOnFashion={item.value} />
+     }
+    else{
+      return null;
+    }
+  }
   return (
     <div className="App">
       <Header />
       <DesktopHeader />
 
-
-      {array.map((item) =>{
-        if(item.key === "headerNav") {
-         return  <Categories categories={item.value} /> 
-        }
-        else if(item.key === "flipkartProducts"){
-          return <CarouselMobile mobileProducts={item.value} />
-        }
-        else if(item.key === "newDeals"){
-          return <Deals offer={item.value} />
-        }
-        else if(item.key === "wishlist"){
-          return <Wishlist wishlist={item.value} />
-        }
-        else if(item.key === "desktopCategories")  {
-         return <DesktopCategories desktopCategories={item.value} />
-        }
-        else if(item.key === "desktopOffers"){
-          return <TopOffer desktopOffers={item.value} />
-        }
-        else if(item.key === "sponsored"){
-          return <Sponsor sponsor={item.value} />
-        }
-        else if(item.key === "spotLight"){
-          return <Spotlight spotlight={item.value} />
-        }
-        else if(item.key === "mobiles"){
-         return <Mobiles desktopMobiles={item.value} />
-        }
-        else if(item.key === "phones"){
-          return <Electronics electronics={item.value} />
-        }
-        
-      }
-
-
-
-
+      {array.map((item) =>
+        arrangeItems(item)
       )}
+
 
 
 
