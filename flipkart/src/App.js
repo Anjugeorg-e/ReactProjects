@@ -45,7 +45,7 @@ function App() {
 
   const fetchData = () => {
     fetch(
-      "https://raw.githubusercontent.com/Anjugeorg-e/flipkart/main/flipkart/public/data.json"
+      "https://raw.githubusercontent.com/Anjugeorg-e/ReactProjects/main/flipkart/public/data.json"
     )
       .then((response) => {
         return response.json();
