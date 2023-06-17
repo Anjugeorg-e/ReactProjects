@@ -103,6 +103,7 @@ function App() {
       <Header />
       <DesktopHeader />
 
+
       {array.map((item) =>{
         if(item.key === "headerNav") {
          return  <Categories categories={item.value} /> 
@@ -119,15 +120,30 @@ function App() {
         else if(item.key === "desktopCategories")  {
          return <DesktopCategories desktopCategories={item.value} />
         }
-        // else if(item.key === "desktopOffers"){
-        //   return <TopOffer desktopOffers={item.value} />
-        // }
+        else if(item.key === "desktopOffers"){
+          return <TopOffer desktopOffers={item.value} />
+        }
+        else if(item.key === "sponsored"){
+          return <Sponsor sponsor={item.value} />
+        }
+        else if(item.key === "spotLight"){
+          return <Spotlight spotlight={item.value} />
+        }
+        else if(item.key === "mobiles"){
+         return <Mobiles desktopMobiles={item.value} />
+        }
+        else if(item.key === "phones"){
+          return <Electronics electronics={item.value} />
+        }
+        
       }
 
 
 
 
       )}
+
+
 
  {/*
       {array.map((item) =>
