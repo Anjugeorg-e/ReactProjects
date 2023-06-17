@@ -113,6 +113,9 @@ function App() {
         else if(item.key === "newDeals"){
           return <Deals offer={item.value} />
         }
+        else if(item.key === "wishlist"){
+          return <Wishlist wishlist={item.value} />
+        }
         else if(item.key === "desktopCategories")  {
          return <DesktopCategories desktopCategories={item.value} />
         }
