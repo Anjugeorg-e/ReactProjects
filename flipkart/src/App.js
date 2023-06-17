@@ -89,13 +89,13 @@ function App() {
     array.push(obj);
   });
 
-  function arrangeItems(){
+  // function arrangeItems(){
 
-    switch("item"){
-      case 'headerNav' :
+  //   switch("item"){
+  //     case 'headerNav' :
 
-    }
-  }
+  //   }
+  // }
 
 
   return (
@@ -103,21 +103,22 @@ function App() {
       <Header />
       <DesktopHeader />
 
-
       {array.map((item) =>{
         if(item.key === "headerNav") {
          return  <Categories categories={item.value} /> 
         }
-        else if(item.key === "newDeals"){
-          return <Deals offer={item.value} />
-        }
         else if(item.key === "flipkartProducts"){
           return <CarouselMobile mobileProducts={item.value} />
+        }
+        else if(item.key === "newDeals"){
+          return <Deals offer={item.value} />
         }
         else if(item.key === "desktopCategories")  {
          return <DesktopCategories desktopCategories={item.value} />
         }
-       
+        else if(item.key === "desktopOffers"){
+          return <TopOffer desktopOffers={item.value} />
+        }
       }
 
 
