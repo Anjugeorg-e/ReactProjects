@@ -89,51 +89,40 @@ function App() {
     array.push(obj);
   });
 
-
-  function arrangeItems(item){
-    if(item.key === "headerNav") {
-      return  <Categories categories={item.value} /> 
-     }
-     else if(item.key === "flipkartProducts"){
-       return <CarouselMobile mobileProducts={item.value} />
-     }
-     else if(item.key === "newDeals"){
-       return <Deals offer={item.value} />
-     }
-     else if(item.key === "wishlist"){
-       return <Wishlist wishlist={item.value} />
-     }
-     else if(item.key === "desktopCategories")  {
-      return <DesktopCategories desktopCategories={item.value} />
-     }
-     else if(item.key === "desktopOffers"){
-       return <TopOffer desktopOffers={item.value} />
-     }
-     else if(item.key === "sponsored"){
-       return <Sponsor sponsor={item.value} />
-     }
-     else if(item.key === "spotLight"){
-       return <Spotlight spotlight={item.value} />
-     }
-     else if(item.value === "caroselElements"){
-      return <CarouselDesktop desktopCarousel={item.value} />
-     }
-     else if(item.key === "mobiles"){
-      return <Mobiles desktopMobiles={item.value} />
-     }
-     else if(item.key === "phones"){
-       return <Electronics electronics={item.value} />
-     }
-     else if(item.key === "mobiles"){
-       <Mobiles desktopMobiles={item.value} />
-     }
-     else if( item.key === "desktopOffers"){
-      <TopOffer desktopOffers={item.value} />
-     }
-     else if(item.key === "dealsOnFashion"){
-      <DealsFashion dealsOnFashion={item.value} />
-     }
-    else{
+  function arrangeItems(item) {
+    if (item.key === "headerNav") {
+      return <Categories categories={item.value} />;
+    } else if (item.key === "flipkartProducts") {
+      return <CarouselMobile mobileProducts={item.value} />;
+    } else if (item.key === "newDeals") {
+      return <Deals offer={item.value} />;
+    } else if (item.key === "wishlist") {
+      return <Wishlist wishlist={item.value} />;
+    } else if (item.key === "desktopCategories") {
+      return <DesktopCategories desktopCategories={item.value} />;
+    } else if (item.key === "desktopOffers") {
+      return <TopOffer desktopOffers={item.value} />;
+    } else if (item.key === "sponsored") {
+      return <Sponsor sponsor={item.value} />;
+    } else if (item.key === "spotLight") {
+      return <Spotlight spotlight={item.value} />;
+    } else if (item.value === "caroselElements") {
+      return <CarouselDesktop desktopCarousel={item.value} />;
+    } else if (item.key === "mobiles") {
+      return <Mobiles desktopMobiles={item.value} />;
+    } else if (item.key === "phones") {
+      return <Electronics electronics={item.value} />;
+    } else if (item.key === "desktopOffers") {
+      return <TopOffer desktopOffers={item.value} />;
+    } else if (item.key === "dealsOnFashion") {
+      return <DealsFashion dealsOnFashion={item.value} />;
+    } else if (item.key === "featuredBrands") {
+      return <FeaturedBrands featuredBrands={item.value} />;
+    } else if (item.key === "electronics") {
+      return <HouseEquipment electronicItems={item.value} />;
+    } else if (item.key === "DealsOnElectronics") {
+      return <DealsElectronics desktopElectronics={item.value} />;
+    } else {
       return null;
     }
   }
@@ -142,14 +131,12 @@ function App() {
       <Header />
       <DesktopHeader />
 
-      {array.map((item) =>
-        arrangeItems(item)
-      )}
+      {/* <div className="BodyContainer"> */}
 
+        {array.map((item) => 
+          arrangeItems(item))}
 
-
-
- {/*
+        {/*
       {array.map((item) =>
         item.key === "desktopCategories" ? (
           <DesktopCategories desktopCategories={item.value} />
@@ -250,6 +237,7 @@ function App() {
       <Electronics electronics={electronics} />
       <DealsElectronics desktopElectronics={desktopElectronics} />       </div> */}
       </div>
+      
     // </div>
   );
 }
