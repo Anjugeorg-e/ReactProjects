@@ -52,7 +52,6 @@ function App() {
       })
       .then((data) => {
         setComponents(data);
-        // console.log(data)
       });
 
     // .then((item) => {
@@ -90,7 +89,7 @@ function App() {
   });
 
   function arrangeItems(item) {
-    if (item.key === "headerNav") {
+    if (item.key === "mobileheaderNav") {
       return <Categories categories={item.value} />;
     } else if (item.key === "flipkartProducts") {
       return <CarouselMobile mobileProducts={item.value} />;
@@ -98,7 +97,7 @@ function App() {
       return <Deals offer={item.value} />;
     } else if (item.key === "wishlist") {
       return <Wishlist wishlist={item.value} />;
-    } else if (item.key === "desktopCategories") {
+    } else if (item.key === "desktopheaderNav") {
       return <DesktopCategories desktopCategories={item.value} />;
     } else if (item.key === "desktopOffers") {
       return <TopOffer desktopOffers={item.value} />;

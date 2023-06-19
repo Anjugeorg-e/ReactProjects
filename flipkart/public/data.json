@@ -1,5 +1,5 @@
 {
-  "headerNav": [
+  "mobileheaderNav": [
     {
       "image": "https://rukminim1.flixcart.com/flap/117/111/image/033f3268031fa0ba.jpg?q=60"
     },
@@ -61,7 +61,7 @@
     }
   ],
  
-  "desktopCategories": [
+  "desktopheaderNav": [
     {
       "image": "https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100",
       "title": "Grocery"
