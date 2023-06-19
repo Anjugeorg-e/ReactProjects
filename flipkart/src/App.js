@@ -131,7 +131,7 @@ function App() {
       <Header />
       <DesktopHeader />
 
-      {/* <div className="BodyContainer"> */}
+      <div className="BodyContainer">
 
         {array.map((item) => 
           arrangeItems(item))}
@@ -238,7 +238,7 @@ function App() {
       <DealsElectronics desktopElectronics={desktopElectronics} />       </div> */}
       </div>
       
-    // </div>
+    </div>
   );
 }
 
