@@ -106,12 +106,12 @@ function App() {
       return <Sponsor sponsor={item.value} />;
     } else if (item.key === "spotLight") {
       return <Spotlight spotlight={item.value} />;
-    } else if (item.value === "caroselElements") {
+    } else if (item.key === "phones") {
+      return <Electronics electronics={item.value} />;
+    } else if (item.key === "caroselElements") {
       return <CarouselDesktop desktopCarousel={item.value} />;
     } else if (item.key === "mobiles") {
       return <Mobiles desktopMobiles={item.value} />;
-    } else if (item.key === "phones") {
-      return <Electronics electronics={item.value} />;
     } else if (item.key === "desktopOffers") {
       return <TopOffer desktopOffers={item.value} />;
     } else if (item.key === "dealsOnFashion") {
@@ -132,9 +132,7 @@ function App() {
       <DesktopHeader />
 
       <div className="BodyContainer">
-
-        {array.map((item) => 
-          arrangeItems(item))}
+        {array.map((item) => arrangeItems(item))}
 
         {/*
       {array.map((item) =>
@@ -237,7 +235,6 @@ function App() {
       <Electronics electronics={electronics} />
       <DealsElectronics desktopElectronics={desktopElectronics} />       </div> */}
       </div>
-      
     </div>
   );
 }
