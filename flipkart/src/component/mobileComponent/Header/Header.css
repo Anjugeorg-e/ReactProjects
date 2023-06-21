@@ -55,27 +55,24 @@
   .exploreWishlist img {
     padding: 0 12px;
   }
-  .flipkartSubHead{
+  .flipkartSubHead {
     padding: 12px 15px;
   }
-  .search-PlaceHolder{
+  .search-PlaceHolder {
     width: 90%;
   }
-  .search-PlaceHolder input{
+  .search-PlaceHolder input {
     width: 100%;
   }
-
 }
 @media screen and (min-width: 425px) {
-  .search-PlaceHolder{
+  .search-PlaceHolder {
     width: 95%;
   }
-
 }
 
-
 @media screen and (min-width: 1024px) {
-  .flpikartHeader{
+  .flpikartHeader {
     display: none;
   }
 }

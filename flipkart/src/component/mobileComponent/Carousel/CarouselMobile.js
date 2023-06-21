@@ -3,9 +3,7 @@ import "./CarouselMobile.css";
 
 function CarouselMobile(props) {
   const [index, setIndex] = useState(0);
-
   const length = props?.length;
-  console.log(length);
 
   const callIndex = () => {
     setIndex(index === length - 1 ? 0 : index + 1);
@@ -19,7 +17,8 @@ function CarouselMobile(props) {
       {props.mobileProducts.map((item) => {
         return (
           <div
-            className="carusel-img" key={item}
+            className="carusel-img"
+            key={item}
             style={{
               transform: ` translateX(${-100 * index}%)`,
               transition: "transform ease-out 0.45s",
@@ -34,5 +33,3 @@ function CarouselMobile(props) {
 }
 
 export default CarouselMobile;
-
-
