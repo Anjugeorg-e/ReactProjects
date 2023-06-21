@@ -6,7 +6,6 @@
   .offersMainContainer {
     display: flex;
     justify-content: space-between;
-    /* padding: 5px 12px; */
     align-items: center;
     position: relative;
     overflow: hidden;

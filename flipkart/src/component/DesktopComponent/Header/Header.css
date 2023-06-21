@@ -55,16 +55,14 @@
     padding: 3px;
     margin: 0 9px;
   }
-  
 }
-  @media screen and (min-width: 1440px) {
-    .DesktopflpikartHeader {
-      padding: 10px 382px;
-    }
-  
+@media screen and (min-width: 1440px) {
+  .DesktopflpikartHeader {
+    padding: 10px 382px;
+  }
+
   .Desktopsearch-PlaceHolder input {
     width: 387px;
     height: 26px;
   }
-  
 }

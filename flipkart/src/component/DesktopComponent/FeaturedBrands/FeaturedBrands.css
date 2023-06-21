@@ -12,7 +12,7 @@
     margin-inline: auto;
     position: relative;
   }
-  .featuredBrands{
+  .featuredBrands {
     background-color: #fff;
   }
   .brandsFeatures {
@@ -61,9 +61,8 @@
 }
 @media screen and (min-width: 1440px) {
   .brandsFeatures {
-    width: 85%
+    width: 85%;
   }
-
   .featuredBrands {
     overflow: hidden;
   }

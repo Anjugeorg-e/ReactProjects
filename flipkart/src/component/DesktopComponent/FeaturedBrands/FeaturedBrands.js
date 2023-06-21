@@ -27,6 +27,7 @@ function FeaturedBrands(props) {
         <div className="left-Slider" ref={prevarrow} onClick={handleClickLeft}>
           <img src={leftarrow} />
         </div>
+
         <div className="brandsFeatures" ref={imageCard}>
           {props.featuredBrands.map((card, index) => (
             <div className="brandsContainer" key={index}>
@@ -34,8 +35,12 @@ function FeaturedBrands(props) {
             </div>
           ))}
         </div>
-        <div className="right-Slider" ref={nextarrow} onClick={handleClickRight}>
-          <img src={leftarrow}  />
+        <div
+          className="right-Slider"
+          ref={nextarrow}
+          onClick={handleClickRight}
+        >
+          <img src={leftarrow} />
         </div>
       </div>
     </div>
