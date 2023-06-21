@@ -117,6 +117,8 @@ function App() {
       return <DealsFashion dealsOnFashion={item.value} />;
     } else if (item.key === "featuredBrands") {
       return <FeaturedBrands featuredBrands={item.value} />;
+    } else if (item.key === "officeEquipments") {
+      return <OfficeEquipment officeElectronics={item.value} />;
     } else if (item.key === "electronics") {
       return <HouseEquipment electronicItems={item.value} />;
     } else if (item.key === "DealsOnElectronics") {
