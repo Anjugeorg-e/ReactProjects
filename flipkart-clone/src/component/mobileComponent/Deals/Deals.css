@@ -1,0 +1,17 @@
+.dealsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.dealsContainer span img {
+  width: 100%;
+  height: 100%;
+}
+.dealsContainer span {
+  padding: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  .dealsContainer {
+    display: none;
+  }
+}
