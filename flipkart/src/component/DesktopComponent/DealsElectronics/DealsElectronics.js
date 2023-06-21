@@ -2,26 +2,9 @@ import React, { useEffect, useRef, useState } from "react";
 import "./DealsElectronics.css";
 import leftarrow from "../Asset/img/prevarrow.svg";
 function DealsElectronics(props) {
-  // const [data, setData] = useState([]);
   const imageCard = useRef();
   const prevarrow = useRef();
   const nextarrow = useRef();
-
-  // const fetchData = () => {
-  //   fetch(
-  //     "https://raw.githubusercontent.com/Anjugeorg-e/flipkart/main/flipkart/public/data.json"
-  //   )
-  //     .then((response) => {
-  //       return response.json();
-  //     })
-  //     .then((item) => {
-  //       setData(item.DealsOnElectronics);
-  //     });
-  // };
-
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
 
   const handleClickNext = () => {
     imageCard.current.style.transform = `translatex(${-35}%)`;
@@ -40,14 +23,18 @@ function DealsElectronics(props) {
     <div className="Electronics-Section">
       <div className="dealsOnElectronics">
         <div className="electext">
-        <div className="electronicsDealsSection">
-          <h2>Top Deals on Electronics</h2>
-          <a href="#">VIEW ALL</a>
-        </div>
+          <div className="electronicsDealsSection">
+            <h2>Top Deals on Electronics</h2>
+            <a href="#">VIEW ALL</a>
+          </div>
         </div>
 
-        <div className="left-Movement" ref={prevarrow} onClick={handleClickPrev}>
-          <img src={leftarrow}  />
+        <div
+          className="left-Movement"
+          ref={prevarrow}
+          onClick={handleClickPrev}
+        >
+          <img src={leftarrow} />
         </div>
         <div className="electronicsContainer" ref={imageCard}>
           {props.desktopElectronics.map((card, index) => (
@@ -63,8 +50,12 @@ function DealsElectronics(props) {
             </div>
           ))}
         </div>
-        <div className="right-Movement" ref={nextarrow} onClick={handleClickNext}>
-          <img src={leftarrow}  />
+        <div
+          className="right-Movement"
+          ref={nextarrow}
+          onClick={handleClickNext}
+        >
+          <img src={leftarrow} />
         </div>
       </div>
     </div>

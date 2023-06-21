@@ -3,30 +3,29 @@
 }
 
 @media screen and (min-width: 1024px) {
- .dealsFashionMainContainer{
-  display: flex;
-  align-items: center;
-  /* padding: 0 22px; */
-  overflow: hidden;
-  max-width: 1600px;
-  margin-inline: auto;
-  background-color: #fff;
- }
-.FashionContainer a{
-  text-decoration: none;
-  color: #fff;
-  background-color: #2874f0;
-  padding: 6px;
-}
-.fashion-subSection{
-  padding: 113px 0;
-  background-color: #fff;
-  z-index: 2;
-}
-.FashionContainer h2{
-  font-weight: 300;
-  font-size: 29px;
-}
+  .dealsFashionMainContainer {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    max-width: 1600px;
+    margin-inline: auto;
+    background-color: #fff;
+  }
+  .FashionContainer a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #2874f0;
+    padding: 6px;
+  }
+  .fashion-subSection {
+    padding: 113px 0;
+    background-color: #fff;
+    z-index: 2;
+  }
+  .FashionContainer h2 {
+    font-weight: 300;
+    font-size: 29px;
+  }
   .dealsFashionContainer {
     display: flex;
   }
@@ -46,23 +45,22 @@
     color: #388e3c;
     padding: 8px 0 0;
   }
-  .fashionDescription .fashionName{
+  .fashionDescription .fashionName {
     margin: 15px 0 0;
   }
-  .fashionDescription .fashionDetails{
+  .fashionDescription .fashionDetails {
     padding: 7px 0 0;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
   }
-  .FashionContainer{
+  .FashionContainer {
     width: 344px;
     height: 100%;
   }
-  .dealsFashionMainContainer .rightMovement .rightarroww img{
+  .dealsFashionMainContainer .rightMovement .rightarroww img {
     box-shadow: 1px 2px 10px -1px rgb(0 0 0 / 30%);
-    background-color: hsla(0,0%,100%,.98);
-
+    background-color: hsla(0, 0%, 100%, 0.98);
   }
   .next-Movement {
     position: absolute;
@@ -77,7 +75,8 @@
     height: 104px;
     right: 0px;
   }
-  .prev-Movement img, .next-Movement img{
+  .prev-Movement img,
+  .next-Movement img {
     width: 14px;
     height: 24px;
   }
@@ -96,19 +95,19 @@
     width: 47px;
     display: none;
     height: 104px;
-    left:340px ;
+    left: 340px;
   }
 }
 @media screen and (min-width: 1440px) {
-.FashionContainer{
-  width: 250px;
-}
-.next-Movement {
-  top: calc(136% - 52px);
-  right: 123px;
-}
-.prev-Movement {
-  top: calc(136% - 52px);
-  left:370px ;
-}
+  .FashionContainer {
+    width: 250px;
+  }
+  .next-Movement {
+    top: calc(136% - 52px);
+    right: 123px;
+  }
+  .prev-Movement {
+    top: calc(136% - 52px);
+    left: 370px;
+  }
 }

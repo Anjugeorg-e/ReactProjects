@@ -50,7 +50,7 @@ function DealsFashion() {
       </div>
       <div className="dealsFashionContainer" ref={imageCard}>
         {data.map((card, index) => (
-          <div className="dealFashionSubContainer" key={index} >
+          <div className="dealFashionSubContainer" key={index}>
             <img src={card.image} />
             <div className="fashionDescription">
               <span className="fashionName">{card.title}</span>
