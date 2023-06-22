@@ -1,9 +1,9 @@
-.offersMainContainer {
+.offers-main-container {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  .offersMainContainer {
+  .offers-main-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -12,10 +12,10 @@
     max-width: 1600px;
     margin-inline: auto;
   }
-  .ofContainer {
+  .offer-container {
     background-color: #fff;
   }
-  .offersContainer {
+  .offers-container {
     display: flex;
     align-items: center;
     white-space: nowrap;
@@ -23,33 +23,33 @@
     width: 100%;
     background-color: #fff;
   }
-  .offerCards {
+  .offer-cards {
     padding: 25px 15px;
   }
-  .offerSubContainer {
+  .offer-sub-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .offerTitle {
+  .offer-title {
     margin: 15px 0 0;
   }
-  .offerRange {
+  .offer-range {
     color: #388e3c;
     padding: 8px 0 0;
   }
-  .offerDescription {
+  .offer-description {
     padding: 7px 0 0;
   }
 
-  .offerFinalContainer img {
+  .offer-final-container img {
     width: 230px;
     height: 354px;
     position: absolute;
     right: 0px;
     top: 0;
   }
-  .topOffers {
+  .top-offers {
     width: 244px;
     height: 100%;
     padding: 127px 0px;
@@ -57,18 +57,18 @@
     background-position: 0px bottom;
     background-repeat: no-repeat;
   }
-  .topOffers a {
+  .top-offers a {
     text-decoration: none;
     color: #fff;
     padding: 6px;
     margin-bottom: 2px;
     background-color: #2874f0;
   }
-  .topOffers h2 {
+  .top-offers h2 {
     font-weight: 400;
     font-size: 25px;
   }
-  .rightChange {
+  .right-change {
     position: absolute;
     display: flex;
     align-items: center;
@@ -81,21 +81,20 @@
     height: 104px;
     right: 227px;
   }
-  .leftChange img,
-  .rightChange img {
+  .left-change img,
+  .right-change img {
     width: 14px;
     height: 24px;
   }
-  .ofContainer {
+  .offer-container {
     background: white;
     z-index: 3;
   }
-  .rightChange img {
+  .right-change img {
     transform: rotate(180deg);
   }
-  .leftChange {
+  .left-change {
     position: absolute;
-    display: flex;
     align-items: center;
     justify-content: space-around;
     top: calc(50% - 52px);
@@ -113,20 +112,20 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .offersMainContainer {
+  .offers-main-container {
     overflow: hidden;
     margin-inline-end: 29px;
     max-width: 1600px;
     margin-inline: auto;
   }
-  .offerFinalContainer {
+  .offer-final-container {
     z-index: 3;
   }
-  .rightChange {
+  .right-change {
     top: calc(50% - 52px);
     right: 229px;
   }
-  .leftChange {
+  .left-change {
     top: calc(50% - 52px);
     left: 240px;
   }

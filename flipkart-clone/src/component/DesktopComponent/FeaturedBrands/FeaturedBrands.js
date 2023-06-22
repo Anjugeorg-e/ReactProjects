@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useRef } from "react";
 
 import "./FeaturedBrands.css";
-import leftarrow from "../Asset/img/prevarrow.svg";
+import arrow from "../Asset/img/prevarrow.svg";
 
 function FeaturedBrands(props) {
   const imageCard = useRef();
@@ -22,25 +22,25 @@ function FeaturedBrands(props) {
   };
 
   return (
-    <div className="featureBrandMainContainer">
-      <div className="featuredBrands">
-        <div className="left-Slider" ref={prevarrow} onClick={handleClickLeft}>
-          <img src={leftarrow} />
+    <div className="feature-brand-main-container">
+      <div className="featured-brands">
+        <div className="left-slider" ref={prevarrow} onClick={handleClickLeft}>
+          <img src={arrow} alt="previous movement image" />
         </div>
 
-        <div className="brandsFeatures" ref={imageCard}>
+        <div className="brands-features" ref={imageCard}>
           {props.featuredBrands.map((card, index) => (
-            <div className="brandsContainer" key={index}>
-              <img src={card} />
+            <div className="brands-container" key={index}>
+              <img src={card} alt="brands" />
             </div>
           ))}
         </div>
         <div
-          className="right-Slider"
+          className="right-slider"
           ref={nextarrow}
           onClick={handleClickRight}
         >
-          <img src={leftarrow} />
+          <img src={arrow} alt="next movement image" />
         </div>
       </div>
     </div>

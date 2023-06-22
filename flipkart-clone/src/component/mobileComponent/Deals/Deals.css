@@ -1,17 +1,17 @@
-.dealsContainer {
+.deals-container {
   display: flex;
   justify-content: space-between;
 }
-.dealsContainer span img {
+.deals-container span img {
   width: 100%;
   height: 100%;
 }
-.dealsContainer span {
+.deals-container span {
   padding: 0;
 }
 
 @media screen and (min-width: 1024px) {
-  .dealsContainer {
+  .deals-container {
     display: none;
   }
 }

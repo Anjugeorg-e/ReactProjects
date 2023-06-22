@@ -13,7 +13,7 @@ function CarouselMobile(props) {
   });
 
   return (
-    <div className="carouselContainer">
+    <div className="carousel-container">
       {props.mobileProducts.map((item) => {
         return (
           <div
@@ -24,7 +24,7 @@ function CarouselMobile(props) {
               transition: "transform ease-out 0.45s",
             }}
           >
-            <img src={item.image} />
+            <img src={item.image} alt="carousel images"/>
           </div>
         );
       })}

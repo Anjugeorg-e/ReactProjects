@@ -3,10 +3,10 @@ import "./HouseEquipment.css";
 
 function HouseEquipment(props) {
   return (
-    <div className="ElectronicsContainer">
+    <div className="electronics-main-container">
       {props.electronicItems.map((card, index) => (
-        <div className="electronicsSection">
-          <img src={card} />
+        <div className="electronics-section">
+          <img src={card} alt="electronic items" />
         </div>
       ))}
     </div>

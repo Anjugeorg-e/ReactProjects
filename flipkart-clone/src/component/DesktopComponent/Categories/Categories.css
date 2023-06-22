@@ -1,40 +1,40 @@
-.DesktopCateoriesContainer {
+.desktop-cateories-container {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  .DesktopCateoriesContainer {
+  .desktop-cateories-container {
     display: flex;
     overflow-x: scroll;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
   }
-  .DesktopCategoriesCards img {
+  .desktop-categories-cards img {
     width: 64px;
     height: 64px;
   }
-  .DesktopCategoriesCards {
+  .desktop-categories-cards {
     padding: 12px 8px;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .DesktopCateoriesContainer {
+  .desktop-cateories-container {
     display: flex;
     overflow-x: scroll;
     align-items: center;
   }
-  .DesktopCategoriesCards img {
+  .desktop-categories-cards img {
     width: 84px;
     height: 84px;
     padding: 0 12px;
   }
-  .DesktopCategoriesCards {
+  .desktop-categories-cards {
     padding: 12px 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .CategoriesMainContainer {
+  .categories-main-container {
     padding: 0 293px;
   }
 }

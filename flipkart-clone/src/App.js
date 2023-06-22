@@ -23,24 +23,6 @@ import CarouselMobile from "./component/mobileComponent/Carousel/CarouselMobile"
 import CarouselDesktop from "./component/DesktopComponent/DesktopCarousel/DesktopCarousel";
 
 function App() {
-  // const [categories, setCategories]=useState([]);
-  // const [desktopCategory, setDesktopCategory] = useState([]);
-  // const [offer, setOffer] = useState([]);
-  // const [desktopOffer, setDesktopOffer] = useState([]);
-  // const [wishlist, setWishlist] = useState([]);
-  // const [sponsor, setSponosor] = useState([]);
-  // const [spotlight, setSpotlight] = useState([]);
-  // const [electronics, setElectronics] = useState([]);
-  // const [desktopmobiles, setMobiles] = useState([]);
-  // const [desktopFashion, setDesktopfashion] = useState([]);
-  // const [desktopElectronics, setDesktopElectronics] = useState([]);
-  // const [officeItems, setOfficeItems] = useState([]);
-  // const [electronicItems, setelectronicItems] = useState([]);
-  // const [brands, setBrands] = useState([]);
-  // const [mobileProducts, setMobileProducts] = useState([]);
-
-  // const [desktopCarousel, setDesktopCarousel] = useState([])
-
   const [components, setComponents] = useState([]);
 
   const fetchData = () => {
@@ -53,26 +35,6 @@ function App() {
       .then((data) => {
         setComponents(data);
       });
-
-    // .then((item) => {
-    //   setCategories(item.headerNav);
-    //   setDesktopCategory(item.desktopCategories);
-    //   setOffer(item.newDeals);
-    //   setDesktopOffer(item.desktopOffers)
-    //   setWishlist(item.wishlist);
-    //   setSponosor(item.sponsored);
-    //   setSpotlight(item.spotLight);
-    //   setElectronics(item.phones);
-    //   setMobiles(item.mobiles);
-    //   setDesktopfashion(item.dealsOnFashion);
-    //   setDesktopElectronics(item.DealsOnElectronics);
-    //   setOfficeItems(item.officeEquipments);
-    //   setelectronicItems(item.electronics)
-    //   setBrands(item.featuredBrands);
-    //   setMobileProducts(item.flipkartProducts);
-    //   setDesktopCarousel(item.caroselElements);
-
-    // });
   };
 
   useEffect(() => {

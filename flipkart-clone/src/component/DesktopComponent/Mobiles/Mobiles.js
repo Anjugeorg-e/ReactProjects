@@ -3,10 +3,10 @@ import './Mobiles.css'
 
 function Mobiles(props) {
   return (
-    <div className='desktopMobilesSection'>
+    <div className='desktop-mobiles-section'>
         {props.desktopMobiles.map((card, index) => (
-            <div className='mobileSubSection' key ={index}>
-                <img src={card} />
+            <div className='mobile-sub-section' key ={index}>
+                <img src={card} alt='mobiles' />
             </div>     
         ))}
 

@@ -3,10 +3,10 @@ import "./OfficeEquipment.css";
 
 function OfficeEquipment(props) {
   return (
-    <div className="officeEquipmentsContainer">
+    <div className="office-equipments-container">
       {props.officeElectronics.map((card, index) => (
-        <div className="equipmentsSubSection">
-          <img src={card} />
+        <div className="equipments-sub-section">
+          <img src={card} alt="office equipments" />
         </div>
       ))}
     </div>

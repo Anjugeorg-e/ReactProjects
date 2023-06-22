@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./TopOffer.css";
 import watch from "../Asset/img/watch.webp";
-import leftarrow from "../Asset/img/prevarrow.svg";
+import arrow from "../Asset/img/prevarrow.svg";
 
 function TopOffer(props) {
   const imageCard = useRef();
@@ -22,34 +22,34 @@ function TopOffer(props) {
   };
 
   return (
-    <div className="offersMainContainer">
-      <div className="ofContainer">
-        <div className="topOffers">
+    <div className="offers-main-container">
+      <div className="offer-container">
+        <div className="top-offers">
           <h2>Top offers</h2>
           <a href="#">VIEW ALL</a>
         </div>
       </div>
 
-      <div className="leftChange" ref={prevarrow} onClick={handleClickLeft}>
-        <img src={leftarrow} />
+      <div className="left-change" ref={prevarrow} onClick={handleClickLeft}>
+        <img src={arrow} alt="previous movement arrow" />
       </div>
-      <div className="offersContainer" ref={imageCard}>
+      <div className="offers-container" ref={imageCard}>
         {props.desktopOffers.map((card, index) => (
-          <div className="offerCards" key={index}>
-            <img src={card.image} />
-            <div className="offerSubContainer">
-              <span className="offerTitle">{card.title}</span>
-              <span className="offerRange">{card.offers}</span>
-              <span className="offerDescription">{card.description}</span>
+          <div className="offer-cards" key={index}>
+            <img src={card.image}  alt="offer items"/>
+            <div className="offer-sub-container">
+              <span className="offer-title">{card.title}</span>
+              <span className="offer-range">{card.offers}</span>
+              <span className="offer-description">{card.description}</span>
             </div>
           </div>
         ))}
       </div>
-      <div className="rightChange" ref={nextarrow} onClick={handleClickRight}>
-        <img src={leftarrow} />
+      <div className="right-change" ref={nextarrow} onClick={handleClickRight}>
+        <img src={arrow}  alt="next movemnet arrow"/>
       </div>
-      <div className="offerFinalContainer">
-        <img src={watch} />
+      <div className="offer-final-container">
+        <img src={watch} alt="offer watch"/>
       </div>
     </div>
   );

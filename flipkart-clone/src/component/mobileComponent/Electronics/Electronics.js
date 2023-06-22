@@ -3,10 +3,10 @@ import "./Electronics.css";
 
 function Electronics(props) {
   return (
-    <div className="PhonesSection">
+    <div className="phones-section">
       {props.electronics.map((card, index) => (
-        <div className="phoneCards" key={index}>
-          <img src={card} />
+        <div className="phone-cards" key={index}>
+          <img src={card} alt="phone models" />
         </div>
       ))}
     </div>

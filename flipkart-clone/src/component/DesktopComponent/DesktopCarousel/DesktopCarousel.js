@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import leftarrow from "../Asset/img/prevarrow.svg";
+import arrow from "../Asset/img/prevarrow.svg";
 import "./DesktopCarousel.css";
 
 function CarouselDesktop(props) {
@@ -29,10 +29,10 @@ function CarouselDesktop(props) {
   };
 
   return (
-    <div className="carouselDesktopContainer">
-      <div className="carousalMainContainer">
-        <div className="leftSlider" onClick={handleClickLeft}>
-          <img src={leftarrow} />
+    <div className="carousel-desktop-container">
+      <div className="carousel-main-container">
+        <div className="left-slider" onClick={handleClickLeft}>
+          <img src={arrow} alt="move to previous value" />
         </div>
 
         {props.desktopCarousel.map((item) => {
@@ -46,12 +46,12 @@ function CarouselDesktop(props) {
               }}
               ref={image}
             >
-              <img src={item} />
+              <img src={item} alt="carousel images" />
             </div>
           );
         })}
-        <div className="rightSlider" onClick={handleClickRight}>
-          <img src={leftarrow} />
+        <div className="right-slider" onClick={handleClickRight}>
+          <img src={arrow} alt="move to right " />
         </div>
       </div>
     </div>

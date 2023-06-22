@@ -1,28 +1,28 @@
-.carousalMainContainer {
+.carousel-main-container {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  .carousalMainContainer {
+  .carousel-main-container {
     padding-top: 12px;
     display: flex;
     align-items: center;
     overflow: hidden;
   }
-  .carouselDesktopContainer {
+  .carousel-desktop-container {
     position: relative;
   }
   .carousel-image img {
     width: 984px;
     height: 280px;
   }
-  .rightSlider img {
+  .right-slider img {
     width: 40px;
     height: 40px;
     box-shadow: 1px 2px 10px -1px rgb(0 0 0 / 30%);
     background-color: hsla(0, 0%, 100%, 0.98);
   }
-  .rightSlider {
+  .right-slider {
     position: absolute;
     display: flex;
     align-items: center;
@@ -35,30 +35,30 @@
     height: 104px;
     right: 0px;
   }
-  .leftSlider img,
-  .rightSlider img {
+  .left-slider img,
+  .right-slider img {
     width: 14px;
     height: 24px;
   }
-  .rightSlider img {
+  .right-slider img {
     transform: rotate(180deg);
   }
-  .leftSlider {
+  .left-slider {
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-around;
     top: calc(52% - 52px);
+    left: 0px;
     background-color: #ffff;
     z-index: 2;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.11);
     width: 47px;
     height: 104px;
-    left: 0px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .carousalMainContainer {
+  .carousel-main-container {
     overflow: hidden;
     max-width: 1600px;
     margin-inline: auto;
@@ -68,11 +68,11 @@
     height: 280px;
     margin-inline: auto;
   }
-  .rightSlider {
+  .right-slider {
     top: calc(49% - 52px);
     right: 123px;
   }
-  .leftSlider {
+  .left-slider {
     top: calc(49% - 52px);
     height: 104px;
     left: 120px;

@@ -1,33 +1,33 @@
-.sponsoredCardsContainer {
+.sponsored-cards-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.sponsoredCards img {
+.sponsored-cards img {
   width: 106px;
   height: 142px;
 }
-.sponsorSubContainer {
+.sponsor-sub-container {
   text-align: left;
   padding: 0 12px;
   border-bottom: 1px solid rgb(234, 234, 234);
 }
-.sponsorSubContainer h4 {
+.sponsor-sub-container h4 {
   font-family: "light";
 }
 @media screen and (min-width: 425px) {
-  .sponsoredCards img {
+  .sponsored-cards img {
     width: 141px;
     height: 188px;
   }
 }
 @media screen and (min-width: 768px) {
-  .sponsoredCards img {
+  .sponsored-cards img {
     width: 256px;
     height: 341px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .sponsorContainer {
+  .sponsor-container {
     display: none;
   }
 }

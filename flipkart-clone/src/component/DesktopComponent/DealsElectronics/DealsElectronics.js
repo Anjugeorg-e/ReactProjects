@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./DealsElectronics.css";
-import leftarrow from "../Asset/img/prevarrow.svg";
+import arrow from "../Asset/img/prevarrow.svg";
 function DealsElectronics(props) {
   const imageCard = useRef();
   const prevarrow = useRef();
@@ -20,30 +20,30 @@ function DealsElectronics(props) {
   };
 
   return (
-    <div className="Electronics-Section">
-      <div className="dealsOnElectronics">
-        <div className="electext">
-          <div className="electronicsDealsSection">
+    <div className="electronics-section">
+      <div className="deals-on-electronics">
+        <div className="electronics-text">
+          <div className="electronics-deals-section">
             <h2>Top Deals on Electronics</h2>
             <a href="#">VIEW ALL</a>
           </div>
         </div>
 
         <div
-          className="left-Movement"
+          className="left-movement"
           ref={prevarrow}
           onClick={handleClickPrev}
         >
-          <img src={leftarrow} />
+          <img src={arrow} alt="previous movement arrow" />
         </div>
-        <div className="electronicsContainer" ref={imageCard}>
+        <div className="electronics-container" ref={imageCard}>
           {props.desktopElectronics.map((card, index) => (
-            <div className="electronicsSubSection">
-              <img src={card.image} />
-              <div className="electronicsDetails">
-                <span className="electronicsName">{card.title}</span>
-                <span className="electronicsPrice">{card.price}</span>
-                <span className="electronicsDescription">
+            <div className="electronics-sub-section">
+              <img src={card.image} alt="electronic items" />
+              <div className="electronics-details">
+                <span className="electronics-name">{card.title}</span>
+                <span className="electronics-price">{card.price}</span>
+                <span className="electronics-description">
                   {card.description}
                 </span>
               </div>
@@ -51,11 +51,11 @@ function DealsElectronics(props) {
           ))}
         </div>
         <div
-          className="right-Movement"
+          className="right-movement"
           ref={nextarrow}
           onClick={handleClickNext}
         >
-          <img src={leftarrow} />
+          <img src={arrow} alt="next movement arrow" />
         </div>
       </div>
     </div>

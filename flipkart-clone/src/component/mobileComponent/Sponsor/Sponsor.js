@@ -3,14 +3,14 @@ import "./Sponsor.css";
 
 function Sponsor(props) {
   return (
-    <div className="sponsorContainer">
-      <div className="sponsorSubContainer">
+    <div className="sponsor-container">
+      <div className="sponsor-sub-container">
         <h4>Sponsored</h4>
       </div>
-      <div className="sponsoredCardsContainer">
+      <div className="sponsored-cards-container">
         {props.sponsor.map((card, index) => (
-          <div className="sponsoredCards" key={index}>
-            <img src={card.image} />
+          <div className="sponsored-cards" key={index}>
+            <img src={card.image} alt="sponsored items"/>
           </div>
         ))}
       </div>

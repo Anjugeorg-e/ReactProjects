@@ -1,9 +1,9 @@
-.featureBrandMainContainer {
+.feature-brand-main-container {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  .featureBrandMainContainer {
+  .feature-brand-main-container {
     display: flex;
     align-items: center;
     padding: 0 16px;
@@ -12,66 +12,57 @@
     margin-inline: auto;
     position: relative;
   }
-  .featuredBrands {
+  .featured-brands {
     background-color: #fff;
   }
-  .brandsFeatures {
+  .brands-features {
     display: flex;
   }
-  .brandsContainer img {
+  .brands-container img {
     width: 400px;
     height: 215px;
     padding: 18px 9px;
   }
-  .right-Slider {
+  .right-slider {
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-around;
     top: calc(45% - 52px);
     z-index: 2;
-    background-color: #ffff;
+    background-color: #fff;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.11);
     width: 47px;
     height: 104px;
     right: 0px;
   }
-  .left-Slider img,
-  .right-Slider img {
+  .left-slider img,
+  .right-slider img {
     width: 14px;
     height: 24px;
   }
-  .right-Slider img {
+  .right-slider img {
     transform: rotate(180deg);
   }
-  .left-Slider {
+  .left-slider {
     position: absolute;
-    display: flex;
     align-items: center;
     justify-content: space-around;
     top: calc(46% - 52px);
-    background-color: #ffff;
+    left: 0px;
+    background-color: #fff;
     z-index: 2;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.11);
     width: 47px;
     display: none;
     height: 104px;
-    left: 0px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .brandsFeatures {
+  .brands-features {
     width: 85%;
   }
-  .featuredBrands {
+  .featured-brands {
     overflow: hidden;
-  }
-  .left-Slider {
-    top: calc(46% - 52px);
-    left: 15px;
-  }
-  .right-Slider {
-    top: calc(45% - 52px);
-    right: 15px;
   }
 }

@@ -1,23 +1,23 @@
-.officeEquipmentsContainer {
+.office-equipments-container {
   display: none;
 }
 @media screen and (min-width: 1024px) {
-  .officeEquipmentsContainer {
+  .office-equipments-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 9px;
   }
-  .equipmentsSubSection img {
+  .equipments-sub-section img {
     width: 327px;
     height: 175px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .equipmentsSubSection img {
+  .equipments-sub-section img {
     width: 100%;
     height: 100%;
   }
-  .officeEquipmentsContainer {
+  .office-equipments-container {
     padding: 0 123px;
     gap: 9px;
   }

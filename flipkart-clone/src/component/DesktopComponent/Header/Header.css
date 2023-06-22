@@ -1,9 +1,9 @@
-.DesktopflpikartHeader {
+.desktop-flpikart-header {
   display: none;
 }
 
 @media screen and (min-width: 1024px) {
-  .DesktopflpikartHeader {
+  .desktop-flpikart-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -11,57 +11,57 @@
     padding: 7px 126px;
   }
 
-  .HeaderOptions {
+  .header-options {
     display: flex;
   }
-  .DesktopflipkartSubHead img {
+  .desktop-flipkart-sub-head img {
     width: 102px;
     height: 29px;
   }
-  .DesktopsearchContainer {
+  .desktop-search-main-container {
     display: flex;
   }
-  .DesktopexploreWishlist {
+  .desktop-explore-wishlist {
     padding: 8px 17px;
     background-color: #fff;
   }
-  .DesktopsearchContainer {
+  .desktop-search-container {
     background-color: #fff;
     height: 31px;
     z-index: 1;
   }
-  .DesktopsearchContainer img {
+  .desktop-search-container img {
     padding: 7px;
   }
-  .Desktopsearch-PlaceHolder input {
+  .desktop-search-Placeholder input {
     width: 237px;
     height: 26px;
   }
-  .Desktopsearch-PlaceHolder {
+  .desktop-search-Placeholder {
     margin-left: -2px;
   }
-  .HeaderOptions {
+  .header-options {
     color: #fff;
   }
-  .HeaderOptions .becomeSeller {
+  .header-options .become-seller {
     padding: 3px;
     margin: 0 9px;
   }
-  .HeaderOptions .moreOptions {
+  .header-options .more-options {
     padding: 3px;
     margin: 0 9px;
   }
-  .HeaderOptions .cart {
+  .header-options .cart {
     padding: 3px;
     margin: 0 9px;
   }
 }
 @media screen and (min-width: 1440px) {
-  .DesktopflpikartHeader {
+  .desktop-flpikart-header {
     padding: 10px 382px;
   }
 
-  .Desktopsearch-PlaceHolder input {
+  .desktop-search-Placeholder input {
     width: 387px;
     height: 26px;
   }

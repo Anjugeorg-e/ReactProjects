@@ -8,23 +8,23 @@ import search from "../Asset/img/search.png";
 import "./Header.css";
 function Header() {
   return (
-    <div className="flpikartHeader">
-      <div className="flipkartSubHead">
-        <div className="exploreMainHead">
+    <div className="flpikart-header">
+      <div className="flipkart-sub-head">
+        <div className="explore-main-head">
           <img src={hamburger} />
-          <img className="exploreHead" src={flipkartHeaderImg} />
+          <img className="explore-head" src={flipkartHeaderImg} />
         </div>
-        <div className="exploreWishlist">
+        <div className="explore-wishlist">
           <img src={addItem} />
           <img src={cartImg} />
           <span>Login</span>
         </div>
       </div>
-      <div className="searchProductsHead">
-        <div className="searchContainer">
+      <div className="search-products-head">
+        <div className="search-container">
           <img src={search} />
         </div>
-        <div className="search-PlaceHolder">
+        <div className="search-placeholder">
           <input placeholder="Search for Products, Brands and More" />
         </div>
       </div>

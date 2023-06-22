@@ -1,78 +1,78 @@
-.flpikartHeader {
+.flpikart-header {
   background-color: rgba(40, 116, 240, 1);
   padding-block-end: 12px;
 }
-.flipkartSubHead {
+.flipkart-sub-head {
   display: flex;
   justify-content: space-between;
   padding: 12px 6px;
   color: #fff;
 }
-.flipkartSubHead .exploreHead {
+.flipkart-sub-head .explore-head {
   width: 85px;
   height: 30px;
 }
-.searchProductsHead {
+.search-products-head {
   display: flex;
   align-items: center;
   padding: 0 20px;
 }
-.searchContainer {
+.search-container {
   background-color: #fff;
   width: 29px;
   height: 31px;
   z-index: 1;
 }
-.exploreMainHead {
+.explore-main-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.exploreWishlist {
+.explore-wishlist {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.search-PlaceHolder input {
+.search-placeholder input {
   padding: 7px;
   width: 242px;
   white-space: nowrap;
   margin-left: -1px;
 }
-.searchContainer img {
+.search-container img {
   height: 16px;
   margin-top: 8px;
 }
-.exploreMainHead img {
+.explore-main-head img {
   padding: 0 6px;
 }
-.exploreWishlist img {
+.explore-wishlist img {
   padding: 0 6px;
 }
 
 @media screen and (min-width: 425px) {
-  .exploreWishlist img {
+  .explore-wishlist img {
     padding: 0 12px;
   }
   .flipkartSubHead {
     padding: 12px 15px;
   }
-  .search-PlaceHolder {
+  .search-placeholder {
     width: 90%;
   }
-  .search-PlaceHolder input {
+  .search-placeholder input {
     width: 100%;
   }
 }
 @media screen and (min-width: 425px) {
-  .search-PlaceHolder {
+  .search-placeholder {
     width: 95%;
   }
 }
 
 @media screen and (min-width: 1024px) {
-  .flpikartHeader {
+  .flpikart-header {
     display: none;
   }
 }
