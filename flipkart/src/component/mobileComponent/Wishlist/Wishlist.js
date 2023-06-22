@@ -9,18 +9,17 @@ function Wishlist(props) {
         <a href="#">View all</a>
       </div>
       <div className="wishlistCardsContainer">
-      {props.wishlist.map((card, index) => (
-            <div className='wishlistCards' key={index}>
-                <img src={card.image} />
-                <div className="wishlistSubCard">
-                  <span>{card.title}</span>
-                <p>{card.offer}</p>
-                </div>
+        {props.wishlist.map((card, index) => (
+          <div className="wishlistCards" key={index}>
+            <img src={card.image} />
+            <div className="wishlistSubCard">
+              <span>{card.title}</span>
+              <p>{card.offer}</p>
             </div>
+          </div>
         ))}
       </div>
     </div>
   );
 }
-
 export default Wishlist;

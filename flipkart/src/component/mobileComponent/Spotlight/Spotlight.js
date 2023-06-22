@@ -1,5 +1,5 @@
-import React,{useState, useEffect} from "react";
-import './Spotlight.css';
+import React, { useState, useEffect } from "react";
+import "./Spotlight.css";
 
 function Spotlight(props) {
   return (
@@ -20,5 +20,4 @@ function Spotlight(props) {
     </div>
   );
 }
-
 export default Spotlight;

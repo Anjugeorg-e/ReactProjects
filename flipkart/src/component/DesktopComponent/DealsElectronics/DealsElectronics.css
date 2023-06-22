@@ -104,7 +104,6 @@
 }
 
 @media screen and (min-width: 1440px) {
-
   .right-Movement {
     top: calc(48% - 52px);
     right: 0px;

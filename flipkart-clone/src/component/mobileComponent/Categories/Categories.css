@@ -1,0 +1,29 @@
+.categories-cards img {
+  width: 58px;
+  height: 55px;
+}
+.cateories-container {
+  display: flex;
+  overflow-x: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+@media screen and (min-width: 425px) {
+  .categories-cards img {
+    width: 77px;
+    height: 73px;
+  }
+}
+@media screen and (min-width: 425px) {
+  .categories-cards img {
+    width: 140px;
+    height: 133px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cateories-container {
+    display: none;
+  }
+}

@@ -1,19 +1,18 @@
-.carouselContainer{
-    display: flex;
-    flex-direction: row;
-    overflow-x: hidden;
+.carouselContainer {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
 }
-.carusel-img{
-    min-width: 100%;
-    height: 100%;
+.carusel-img {
+  min-width: 100%;
+  height: 100%;
 }
-.carusel-img img{
-    width: 100%;
-    height: 100%;
+.carusel-img img {
+  width: 100%;
+  height: 100%;
 }
-
 @media screen and (min-width: 1024px) {
-   .carouselContainer{
+  .carouselContainer {
     display: none;
-   }
+  }
 }

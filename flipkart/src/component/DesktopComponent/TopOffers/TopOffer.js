@@ -29,6 +29,7 @@ function TopOffer(props) {
           <a href="#">VIEW ALL</a>
         </div>
       </div>
+
       <div className="leftChange" ref={prevarrow} onClick={handleClickLeft}>
         <img src={leftarrow} />
       </div>

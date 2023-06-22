@@ -15,6 +15,7 @@ function DesktopHeader() {
         <div className="DesktopsearchContainer">
           <img src={search} />
         </div>
+
         <div className="Desktopsearch-PlaceHolder">
           <input placeholder="Search for Products, Brands and More" />
         </div>

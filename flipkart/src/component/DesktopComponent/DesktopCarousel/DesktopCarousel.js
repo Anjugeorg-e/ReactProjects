@@ -3,25 +3,8 @@ import leftarrow from "../Asset/img/prevarrow.svg";
 import "./DesktopCarousel.css";
 
 function CarouselDesktop(props) {
-  // const [data, setData] = useState([]);
   let [index, setIndex] = useState(0);
   const image = useRef();
-
-  // const fetchData = () => {
-  //   fetch(
-  //     "https://raw.githubusercontent.com/Anjugeorg-e/flipkart/main/flipkart/public/data.json"
-  //   )
-  //     .then((response) => {
-  //       return response.json();
-  //     })
-  //     .then((item) => {
-  //       setData(item.caroselElements);
-  //     });
-  // };
-
-  // useEffect(() => {
-  //   fetchData();
-  // }, []);
 
   const length = props?.length;
   console.log(length);
