@@ -1,31 +1,37 @@
 .sponsored-cards-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
 }
+
 .sponsored-cards img {
   width: 106px;
   height: 142px;
 }
+
 .sponsor-sub-container {
   text-align: left;
   padding: 0 12px;
   border-bottom: 1px solid rgb(234, 234, 234);
 }
+
 .sponsor-sub-container h4 {
   font-family: "light";
 }
+
 @media screen and (min-width: 425px) {
   .sponsored-cards img {
     width: 141px;
     height: 188px;
   }
 }
+
 @media screen and (min-width: 768px) {
   .sponsored-cards img {
     width: 256px;
     height: 341px;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .sponsor-container {
     display: none;

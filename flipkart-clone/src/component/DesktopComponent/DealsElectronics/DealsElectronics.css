@@ -9,106 +9,125 @@
     max-width: 1600px;
     margin-inline: auto;
   }
+
   .deals-on-electronics {
     display: flex;
-    position: relative;
     align-items: center;
+    position: relative;
     background-color: #fff;
   }
+
   .electronics-container {
     display: flex;
     width: 44%;
   }
+
   .electronics-sub-section img {
     width: 150px;
     height: 200px;
   }
+
   .electronics-sub-section {
     padding: 25px 15px;
   }
+
   .electronics-deals-section a {
     text-decoration: none;
     color: #fff;
     background-color: #2874f0;
     padding: 5px;
   }
+
   .electronics-deals-section {
-    padding: 127px 0px;
+    padding: 127px 0;
     background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/0b22f4bdbe5b032a.jpg?q=90);
-    background-position: 0px bottom;
+    background-position: 0 bottom;
     background-repeat: no-repeat;
   }
+
   .electronics-details {
     display: flex;
     flex-direction: column;
   }
+
   .electronics-sub-section .electronicsName {
     margin: 15px 0 0;
   }
+
   .electronics-price {
     color: #388e3c;
     padding: 8px 0 0;
   }
+
   .electronics-description {
     padding: 7px 0 0;
   }
+
   .left-movement,
   .right-Movement {
     position: absolute;
     z-index: 2;
     cursor: pointer;
   }
-}
+
+
 .electronics-text {
   background: white;
   z-index: 3;
 }
+
 .electronics-deals-section {
   z-index: 2;
   background-color: #fff;
 }
+
 .right-movement {
   position: absolute;
   display: flex;
   align-items: center;
   justify-content: space-around;
   top: calc(52% - 52px);
-  right: 0px;
+  right: 0;
   z-index: 2;
   background-color: #ffff;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.11);
   width: 47px;
   height: 104px;
 }
+
 .left-movement img,
 .right-movement img {
   width: 14px;
   height: 24px;
 }
+
 .right-movement img {
   transform: rotate(180deg);
 }
+
 .left-movement {
   position: absolute;
   align-items: center;
   top: calc(46% - 52px);
-  background-color: #ffff;
+  left: 270px;
+  background-color: #fff;
   z-index: 2;
   box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.11);
-  width: 47px;
   display: none;
+  width: 47px;
   height: 104px;
-  left: 270px;
 }
 
 @media screen and (min-width: 1440px) {
   .right-movement {
     top: calc(48% - 52px);
-    right: 0px;
+    right: 0;
   }
+
   .left-movement {
     top: calc(48% - 52px);
     height: 104px;
     left: 280px;
   }
+}
 }

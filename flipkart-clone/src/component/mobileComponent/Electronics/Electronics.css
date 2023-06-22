@@ -2,6 +2,7 @@
   display: flex;
   margin-top: 9px;
 }
+
 .phone-cards img {
   width: 100%;
   height: 100%;
@@ -12,6 +13,7 @@
     justify-content: space-between;
   }
 }
+
 @media screen and (min-width: 1024px) {
   .phones-section {
     display: none;

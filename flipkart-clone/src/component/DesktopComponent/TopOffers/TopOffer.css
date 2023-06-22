@@ -12,9 +12,11 @@
     max-width: 1600px;
     margin-inline: auto;
   }
+
   .offer-container {
     background-color: #fff;
   }
+
   .offers-container {
     display: flex;
     align-items: center;
@@ -23,40 +25,47 @@
     width: 100%;
     background-color: #fff;
   }
+
   .offer-cards {
     padding: 25px 15px;
   }
+
   .offer-sub-container {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .offer-title {
     margin: 15px 0 0;
   }
+
   .offer-range {
     color: #388e3c;
     padding: 8px 0 0;
   }
+
   .offer-description {
     padding: 7px 0 0;
   }
 
   .offer-final-container img {
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 230px;
     height: 354px;
-    position: absolute;
-    right: 0px;
-    top: 0;
   }
+
   .top-offers {
+    padding: 127px 0;
+    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/0b22f4bdbe5b032a.jpg?q=90);
+    background-position: 0 bottom;
+    background-repeat: no-repeat;
     width: 244px;
     height: 100%;
-    padding: 127px 0px;
-    background-image: url(https://rukminim1.flixcart.com/fk-p-flap/278/278/image/0b22f4bdbe5b032a.jpg?q=90);
-    background-position: 0px bottom;
-    background-repeat: no-repeat;
   }
+
   .top-offers a {
     text-decoration: none;
     color: #fff;
@@ -64,48 +73,55 @@
     margin-bottom: 2px;
     background-color: #2874f0;
   }
+
   .top-offers h2 {
     font-weight: 400;
     font-size: 25px;
   }
+
   .right-change {
     position: absolute;
     display: flex;
     align-items: center;
     justify-content: space-around;
     top: calc(50% - 52px);
+    right: 227px;
     z-index: 2;
-    background-color: #ffff;
+    background-color: #fff;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.11);
     width: 47px;
     height: 104px;
-    right: 227px;
   }
+  
   .left-change img,
   .right-change img {
     width: 14px;
     height: 24px;
   }
+
   .offer-container {
     background: white;
     z-index: 3;
   }
+
   .right-change img {
     transform: rotate(180deg);
   }
+
   .left-change {
     position: absolute;
     align-items: center;
     justify-content: space-around;
     top: calc(50% - 52px);
-    background-color: #ffff;
+    left: 240px;
+    background-color: #fff;
     z-index: 2;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.11);
-    width: 47px;
     display: none;
+    width: 47px;
     height: 104px;
-    left: 240px;
   }
+  
   .Electronics-Section {
     overflow: hidden;
   }
@@ -118,13 +134,16 @@
     max-width: 1600px;
     margin-inline: auto;
   }
+
   .offer-final-container {
     z-index: 3;
   }
+
   .right-change {
     top: calc(50% - 52px);
     right: 229px;
   }
+
   .left-change {
     top: calc(50% - 52px);
     left: 240px;

@@ -14,13 +14,16 @@
   .header-options {
     display: flex;
   }
+
   .desktop-flipkart-sub-head img {
     width: 102px;
     height: 29px;
   }
+
   .desktop-search-main-container {
     display: flex;
   }
+
   .desktop-explore-wishlist {
     padding: 8px 17px;
     background-color: #fff;
@@ -30,32 +33,40 @@
     height: 31px;
     z-index: 1;
   }
+
   .desktop-search-container img {
     padding: 7px;
   }
+
   .desktop-search-Placeholder input {
     width: 237px;
     height: 26px;
   }
+
   .desktop-search-Placeholder {
     margin-left: -2px;
   }
+
   .header-options {
     color: #fff;
   }
+
   .header-options .become-seller {
     padding: 3px;
     margin: 0 9px;
   }
+
   .header-options .more-options {
     padding: 3px;
     margin: 0 9px;
   }
+
   .header-options .cart {
     padding: 3px;
     margin: 0 9px;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .desktop-flpikart-header {
     padding: 10px 382px;

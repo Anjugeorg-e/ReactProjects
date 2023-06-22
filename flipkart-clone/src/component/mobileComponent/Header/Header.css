@@ -2,32 +2,38 @@
   background-color: rgba(40, 116, 240, 1);
   padding-block-end: 12px;
 }
+
 .flipkart-sub-head {
   display: flex;
   justify-content: space-between;
   padding: 12px 6px;
   color: #fff;
 }
+
 .flipkart-sub-head .explore-head {
   width: 85px;
   height: 30px;
 }
+
 .search-products-head {
   display: flex;
   align-items: center;
   padding: 0 20px;
 }
+
 .search-container {
   background-color: #fff;
   width: 29px;
   height: 31px;
   z-index: 1;
 }
+
 .explore-main-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .explore-wishlist {
   display: flex;
   align-items: center;
@@ -40,13 +46,16 @@
   white-space: nowrap;
   margin-left: -1px;
 }
+
 .search-container img {
   height: 16px;
   margin-top: 8px;
 }
+
 .explore-main-head img {
   padding: 0 6px;
 }
+
 .explore-wishlist img {
   padding: 0 6px;
 }
@@ -55,16 +64,20 @@
   .explore-wishlist img {
     padding: 0 12px;
   }
+
   .flipkartSubHead {
     padding: 12px 15px;
   }
+
   .search-placeholder {
     width: 90%;
   }
+
   .search-placeholder input {
     width: 100%;
   }
 }
+
 @media screen and (min-width: 425px) {
   .search-placeholder {
     width: 95%;

@@ -8,10 +8,12 @@
     overflow-x: scroll;
     box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
   }
+
   .desktop-categories-cards img {
     width: 64px;
     height: 64px;
   }
+
   .desktop-categories-cards {
     padding: 12px 8px;
   }
@@ -23,11 +25,13 @@
     overflow-x: scroll;
     align-items: center;
   }
+
   .desktop-categories-cards img {
     width: 84px;
     height: 84px;
     padding: 0 12px;
   }
+  
   .desktop-categories-cards {
     padding: 12px 8px;
     display: flex;

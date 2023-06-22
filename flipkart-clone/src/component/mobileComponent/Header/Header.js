@@ -11,18 +11,18 @@ function Header() {
     <div className="flpikart-header">
       <div className="flipkart-sub-head">
         <div className="explore-main-head">
-          <img src={hamburger} />
+          <img src={hamburger} alt="hamburger" />
           <img className="explore-head" src={flipkartHeaderImg} />
         </div>
         <div className="explore-wishlist">
-          <img src={addItem} />
-          <img src={cartImg} />
+          <img src={addItem} alt="items" />
+          <img src={cartImg} alt="cart"/>
           <span>Login</span>
         </div>
       </div>
       <div className="search-products-head">
         <div className="search-container">
-          <img src={search} />
+          <img src={search} alt="search" />
         </div>
         <div className="search-placeholder">
           <input placeholder="Search for Products, Brands and More" />

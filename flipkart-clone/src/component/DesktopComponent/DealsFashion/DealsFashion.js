@@ -46,12 +46,12 @@ function DealsFashion() {
         </div>
       </div>
       <div className="prev-movement" ref={prevarrow} onClick={handleClickLeft}>
-        <img src={arrow} />
+        <img src={arrow} alt="previous movemnt arrow" />
       </div>
       <div className="deals-fashion-container" ref={imageCard}>
         {data.map((card, index) => (
           <div className="deals-fashion-sub-container" key={index}>
-            <img src={card.image} alt="" />
+            <img src={card.image} alt="fashion items" />
             <div className="fashion-description">
               <span className="fashion-name">{card.title}</span>
               <span className="fashion-offers">{card.price}</span>
@@ -61,7 +61,7 @@ function DealsFashion() {
         ))}
       </div>
       <div className="next-movement" ref={nextarrow} onClick={handleClickRight}>
-        <img src={arrow} />
+        <img src={arrow} alt="next movemnet arrow" />
       </div>
     </div>
   );
